@@ -211,6 +211,8 @@ namespace MvvmCross.Platforms.Android.Binding
 
             var allCompoundDrawableNames = new[]
             {
+                MvxAndroidPropertyBinding.TextView_CompoundDrawableName,
+                MvxAndroidPropertyBinding.TextView_CompoundDrawableNameRelative,
                 MvxAndroidPropertyBinding.TextView_CompoundDrawableNameLeft,
                 MvxAndroidPropertyBinding.TextView_CompoundDrawableNameRight,
                 MvxAndroidPropertyBinding.TextView_CompoundDrawableNameTop,
@@ -227,6 +229,8 @@ namespace MvvmCross.Platforms.Android.Binding
 
             var allCompoundDrawableIds = new[]
             {
+                MvxAndroidPropertyBinding.TextView_CompoundDrawableId,
+                MvxAndroidPropertyBinding.TextView_CompoundDrawableIdRelative,
                 MvxAndroidPropertyBinding.TextView_CompoundDrawableIdLeft,
                 MvxAndroidPropertyBinding.TextView_CompoundDrawableIdRight,
                 MvxAndroidPropertyBinding.TextView_CompoundDrawableIdTop,

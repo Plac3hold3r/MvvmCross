@@ -26,8 +26,7 @@ namespace MvvmCross.Platforms.Android.Binding.Target
             var id = resources.GetIdentifier(drawableName, "drawable", AndroidGlobals.ApplicationContext.PackageName);
             if (id == 0)
             {
-                MvxBindingLog.Warning(
-                    "Value '{0}' was not a known resource drawable name", value);
+                MvxBindingLog.Warning("Value '{0}' was not a known resource drawable name", value);
             }
             else
             {

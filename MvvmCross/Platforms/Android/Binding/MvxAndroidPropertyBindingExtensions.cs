@@ -116,6 +116,12 @@ namespace MvvmCross.Platforms.Android.Binding
         public static string BindMarginEnd(this View view)
             => MvxAndroidPropertyBinding.View_MarginEnd;
 
+        public static string BindCCompoundDrawableName(this TextView view)
+            => MvxAndroidPropertyBinding.TextView_CompoundDrawableName;
+
+        public static string BindCompoundDrawableNameRelative(this TextView view)
+            => MvxAndroidPropertyBinding.TextView_CompoundDrawableNameRelative;
+
         public static string BindCompoundDrawableNameLeft(this TextView view)
             => MvxAndroidPropertyBinding.TextView_CompoundDrawableNameLeft;
 
@@ -136,6 +142,12 @@ namespace MvvmCross.Platforms.Android.Binding
 
         public static string BindCompoundDrawableIdLeft(this TextView view)
             => MvxAndroidPropertyBinding.TextView_CompoundDrawableIdLeft;
+
+        public static string BindCompoundDrawableId(this TextView view)
+            => MvxAndroidPropertyBinding.TextView_CompoundDrawableId;
+
+        public static string BindCompoundDrawableIdRelative(this TextView view)
+            => MvxAndroidPropertyBinding.TextView_CompoundDrawableIdRelative;
 
         public static string BindCompoundDrawableIdRight(this TextView view)
             => MvxAndroidPropertyBinding.TextView_CompoundDrawableIdRight;

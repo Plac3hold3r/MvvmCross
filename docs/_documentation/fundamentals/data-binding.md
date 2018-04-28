@@ -1099,12 +1099,16 @@ Android.Views.View | MarginStart | BindMarginStart() | 6.0.0
 Android.Views.View | MarginEnd | BindMarginEnd() | 6.0.0
 Android.Widget.TextView | Text | BindText()
 Android.Widget.TextView | TextFormatted | BindTextFormatted()
+Android.Widget.TextView | CompoundDrawableName | BindCCompoundDrawableName() | 6.1.0
+Android.Widget.TextView | CompoundDrawableNameRelative | BindCompoundDrawableNameRelative() | 6.1.0
 Android.Widget.TextView | CompoundDrawableNameLeft | BindCompoundDrawableNameLeft() | 6.1.0
 Android.Widget.TextView | CompoundDrawableNameRight | BindCompoundDrawableNameRight() | 6.1.0
 Android.Widget.TextView | CompoundDrawableNameTop | BindCompoundDrawableNameTop() | 6.1.0
 Android.Widget.TextView | CompoundDrawableNameBottom | BindCompoundDrawableNameBottom() | 6.1.0
 Android.Widget.TextView | CompoundDrawableNameStart | BindCompoundDrawableNameStart() | 6.1.0
 Android.Widget.TextView | CompoundDrawableNameEnd | BindCompoundDrawableNameEnd() | 6.1.0
+Android.Widget.TextView | CompoundDrawableId | BindCompoundDrawableId() | 6.1.0
+Android.Widget.TextView | CompoundDrawableIdRelative | BindCompoundDrawableIdRelative() | 6.1.0
 Android.Widget.TextView | CompoundDrawableIdLeft | BindCompoundDrawableIdLeft() | 6.1.0
 Android.Widget.TextView | CompoundDrawableIdRight | BindCompoundDrawableIdRight() | 6.1.0
 Android.Widget.TextView | CompoundDrawableIdTop | BindCompoundDrawableIdTop() | 6.1.0

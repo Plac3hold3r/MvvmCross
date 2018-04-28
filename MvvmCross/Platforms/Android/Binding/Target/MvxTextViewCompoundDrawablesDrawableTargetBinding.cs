@@ -58,10 +58,23 @@ namespace MvvmCross.Platforms.Android.Binding.Target
                         break;
                 }
             }
+            else if (value is ValueTuple<int, int, int, int> directions)
+            {
+                switch (_whichCompoundDrawable)
+                {
+                    case MvxAndroidPropertyBinding.TextView_CompoundDrawableName:
+                    case MvxAndroidPropertyBinding.TextView_CompoundDrawableId:
+                        textView.SetCompoundDrawablesWithIntrinsicBounds(directions.Item1, directions.Item2, directions.Item3, directions.Item4);
+                        break;
+                    case MvxAndroidPropertyBinding.TextView_CompoundDrawableNameRelative:
+                    case MvxAndroidPropertyBinding.TextView_CompoundDrawableIdRelative:
+                        textView.SetCompoundDrawablesRelativeWithIntrinsicBounds(directions.Item1, directions.Item2, directions.Item3, directions.Item4);
+                        break;
+                }
+            }
             else
             {
-                MvxBindingLog.Warning(
-                    "Value '{0}' was not a known resource drawable identifier", value);
+                MvxBindingLog.Warning("Value '{0}' was not a known resource drawable identifier", value);
             }
         }
     }
