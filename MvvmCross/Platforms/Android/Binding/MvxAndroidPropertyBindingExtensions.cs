@@ -115,5 +115,41 @@ namespace MvvmCross.Platforms.Android.Binding
 
         public static string BindMarginEnd(this View view)
             => MvxAndroidPropertyBinding.View_MarginEnd;
+
+        public static string BindCompoundDrawableNameLeft(this TextView view)
+            => MvxAndroidPropertyBinding.TextView_CompoundDrawableNameLeft;
+
+        public static string BindompoundDrawableNameRight(this TextView view)
+            => MvxAndroidPropertyBinding.TextView_CompoundDrawableNameRight;
+
+        public static string BindCompoundDrawableNameTop(this TextView view)
+            => MvxAndroidPropertyBinding.TextView_CompoundDrawableNameTop;
+
+        public static string BindCompoundDrawableNameBottom(this TextView view)
+            => MvxAndroidPropertyBinding.TextView_CompoundDrawableNameBottom;
+
+        public static string BindCompoundDrawableNameStart(this TextView view)
+            => MvxAndroidPropertyBinding.TextView_CompoundDrawableNameStart;
+
+        public static string BindCompoundDrawableNameEnd(this TextView view)
+            => MvxAndroidPropertyBinding.TextView_CompoundDrawableNameEnd;
+
+        public static string BindCompoundDrawableIdLeft(this TextView view)
+            => MvxAndroidPropertyBinding.TextView_CompoundDrawableIdLeft;
+
+        public static string BindCompoundDrawableIdRight(this TextView view)
+            => MvxAndroidPropertyBinding.TextView_CompoundDrawableIdRight;
+
+        public static string BindCompoundDrawableIdTop(this TextView view)
+            => MvxAndroidPropertyBinding.TextView_CompoundDrawableIdTop;
+
+        public static string BindCompoundDrawableIdBottom(this TextView view)
+            => MvxAndroidPropertyBinding.TextView_CompoundDrawableIdBottom;
+
+        public static string BindCompoundDrawableIdStart(this TextView view)
+            => MvxAndroidPropertyBinding.TextView_CompoundDrawableIdStart;
+
+        public static string BindCompoundDrawableIdEnd(this TextView view)
+            => MvxAndroidPropertyBinding.TextView_CompoundDrawableIdEnd;
     }
 }
