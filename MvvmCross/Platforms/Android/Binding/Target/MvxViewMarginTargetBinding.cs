@@ -11,12 +11,11 @@ namespace MvvmCross.Platforms.Android.Binding.Target
 {
     public class MvxViewMarginTargetBinding : MvxAndroidTargetBinding
     {
-        private string _whichMargin;
+        private readonly string _whichMargin;
 
         public MvxViewMarginTargetBinding(View target, string whichMargin) : base(target)
         {
-            if (whichMargin == null) throw new ArgumentNullException(nameof(whichMargin));
-            _whichMargin = whichMargin;
+            _whichMargin = whichMargin ?? throw new ArgumentNullException(nameof(whichMargin));
         }
 
         public override Type TargetType => typeof(int);
