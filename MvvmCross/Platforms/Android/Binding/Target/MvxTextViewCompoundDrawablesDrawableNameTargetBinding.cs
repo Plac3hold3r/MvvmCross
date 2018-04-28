@@ -9,12 +9,12 @@ using MvvmCross.Binding;
 
 namespace MvvmCross.Platforms.Android.Binding.Target
 {
-    public class MvxCompoundDrawablesDrawableNameTargetBinding
+    public class MvxTextViewCompoundDrawablesDrawableNameTargetBinding
         : MvxAndroidTargetBinding
     {
         private readonly string _whichCompoundDrawable;
 
-        public MvxCompoundDrawablesDrawableNameTargetBinding(View target, string whichCompoundDrawable)
+        public MvxTextViewCompoundDrawablesDrawableNameTargetBinding(View target, string whichCompoundDrawable)
             : base(target)
         {
             _whichCompoundDrawable = whichCompoundDrawable ?? throw new ArgumentNullException(nameof(whichCompoundDrawable));
@@ -36,7 +36,7 @@ namespace MvvmCross.Platforms.Android.Binding.Target
             if (id == 0)
             {
                 MvxBindingLog.Warning(
-                    "Value '{0}' was not a known compound drawable name", value);
+                    "Value '{0}' was not a known resource drawable name", value);
                 return;
             }
 

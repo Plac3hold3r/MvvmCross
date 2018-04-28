@@ -2,11 +2,9 @@
 // The .NET Foundation licenses this file to you under the MS-PL license.
 // See the LICENSE file in the project root for more information.
 
-using Android.Graphics;
 using Android.Preferences;
 using Android.Views;
 using Android.Widget;
-using MvvmCross.Base;
 using MvvmCross.IoC;
 using MvvmCross.Binding;
 using MvvmCross.Binding.BindingContext;
@@ -209,6 +207,22 @@ namespace MvvmCross.Platforms.Android.Binding
             {
                 registry.RegisterCustomBindingFactory<View>(
                     margin, view => new MvxViewMarginTargetBinding(view, margin));
+            }
+
+            var allCompoundDrawableDrawableNames = new[]
+            {
+                MvxAndroidPropertyBinding.TextView_CompoundDrawableNameLeft, 
+                MvxAndroidPropertyBinding.TextView_CompoundDrawableNameRight,
+                MvxAndroidPropertyBinding.TextView_CompoundDrawableNameTop,
+                MvxAndroidPropertyBinding.TextView_CompoundDrawableNameBottom,
+                MvxAndroidPropertyBinding.TextView_CompoundDrawableNameStart,
+                MvxAndroidPropertyBinding.TextView_CompoundDrawableNameEnd
+            };
+
+            foreach (var compoundDrawableName in allCompoundDrawableDrawableNames)
+            {
+                registry.RegisterCustomBindingFactory<TextView>(
+                    compoundDrawableName, view => new MvxTextViewCompoundDrawablesDrawableNameTargetBinding(view, compoundDrawableName));
             }
         }
 
