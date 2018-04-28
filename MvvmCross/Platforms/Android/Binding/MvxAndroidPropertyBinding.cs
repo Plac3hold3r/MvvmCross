@@ -49,5 +49,12 @@ namespace MvvmCross.Platforms.Android.Binding
         public const string TextView_CompoundDrawableNameBottom = "CompoundDrawableNameBottom";
         public const string TextView_CompoundDrawableNameStart = "CompoundDrawableNameStart";
         public const string TextView_CompoundDrawableNameEnd = "CompoundDrawableNameEnd";
+
+        public const string TextView_CompoundDrawableIdLeft = "CompoundDrawableIdLeft";
+        public const string TextView_CompoundDrawableIdRight = "CompoundDrawableIdRight";
+        public const string TextView_CompoundDrawableIdTop = "CompoundDrawableIdTop";
+        public const string TextView_CompoundDrawableIdBottom = "CompoundDrawableIdBottom";
+        public const string TextView_CompoundDrawableIdStart = "CompoundDrawableIdStart";
+        public const string TextView_CompoundDrawableIdEnd = "CompoundDrawableIdEnd";
     }
 }

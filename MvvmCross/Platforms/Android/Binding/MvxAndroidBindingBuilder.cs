@@ -203,15 +203,15 @@ namespace MvvmCross.Platforms.Android.Binding
                 MvxAndroidPropertyBinding.View_MarginEnd
             };
 
-            foreach(var margin in allMargins)
+            foreach (var margin in allMargins)
             {
                 registry.RegisterCustomBindingFactory<View>(
                     margin, view => new MvxViewMarginTargetBinding(view, margin));
             }
 
-            var allCompoundDrawableDrawableNames = new[]
+            var allCompoundDrawableNames = new[]
             {
-                MvxAndroidPropertyBinding.TextView_CompoundDrawableNameLeft, 
+                MvxAndroidPropertyBinding.TextView_CompoundDrawableNameLeft,
                 MvxAndroidPropertyBinding.TextView_CompoundDrawableNameRight,
                 MvxAndroidPropertyBinding.TextView_CompoundDrawableNameTop,
                 MvxAndroidPropertyBinding.TextView_CompoundDrawableNameBottom,
@@ -219,10 +219,26 @@ namespace MvvmCross.Platforms.Android.Binding
                 MvxAndroidPropertyBinding.TextView_CompoundDrawableNameEnd
             };
 
-            foreach (var compoundDrawableName in allCompoundDrawableDrawableNames)
+            foreach (var compoundDrawableName in allCompoundDrawableNames)
             {
                 registry.RegisterCustomBindingFactory<TextView>(
                     compoundDrawableName, view => new MvxTextViewCompoundDrawablesDrawableNameTargetBinding(view, compoundDrawableName));
+            }
+
+            var allCompoundDrawableIds = new[]
+            {
+                MvxAndroidPropertyBinding.TextView_CompoundDrawableIdLeft,
+                MvxAndroidPropertyBinding.TextView_CompoundDrawableIdRight,
+                MvxAndroidPropertyBinding.TextView_CompoundDrawableIdTop,
+                MvxAndroidPropertyBinding.TextView_CompoundDrawableIdBottom,
+                MvxAndroidPropertyBinding.TextView_CompoundDrawableIdStart,
+                MvxAndroidPropertyBinding.TextView_CompoundDrawableIdEnd
+            };
+
+            foreach (var compoundDrawableId in allCompoundDrawableIds)
+            {
+                registry.RegisterCustomBindingFactory<TextView>(
+                    compoundDrawableId, view => new MvxTextViewCompoundDrawablesDrawableTargetBinding(view, compoundDrawableId));
             }
         }
 

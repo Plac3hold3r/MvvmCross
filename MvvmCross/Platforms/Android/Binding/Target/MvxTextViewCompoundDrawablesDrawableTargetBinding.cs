@@ -8,16 +8,18 @@ using MvvmCross.Binding;
 
 namespace MvvmCross.Platforms.Android.Binding.Target
 {
-    public abstract class MvxTextViewCompoundDrawablesBaseTargetBinding 
+    public class MvxTextViewCompoundDrawablesDrawableTargetBinding 
         : MvxAndroidTargetBinding
     {
         private readonly string _whichCompoundDrawable;
 
-        protected MvxTextViewCompoundDrawablesBaseTargetBinding(object target, string whichCompoundDrawable)
+        public MvxTextViewCompoundDrawablesDrawableTargetBinding(TextView target, string whichCompoundDrawable)
             : base(target)
         {
             _whichCompoundDrawable = whichCompoundDrawable ?? throw new ArgumentNullException(nameof(whichCompoundDrawable));
         }
+
+        public override Type TargetType => typeof(int);
 
         public override MvxBindingMode DefaultMode => MvxBindingMode.OneWay;
 
@@ -31,21 +33,27 @@ namespace MvvmCross.Platforms.Android.Binding.Target
                 switch (_whichCompoundDrawable)
                 {
                     case MvxAndroidPropertyBinding.TextView_CompoundDrawableNameLeft:
+                    case MvxAndroidPropertyBinding.TextView_CompoundDrawableIdLeft:
                         textView.SetCompoundDrawablesWithIntrinsicBounds(resourceId, 0, 0, 0);
                         break;
                     case MvxAndroidPropertyBinding.TextView_CompoundDrawableNameRight:
+                    case MvxAndroidPropertyBinding.TextView_CompoundDrawableIdRight:
                         textView.SetCompoundDrawablesWithIntrinsicBounds(0, 0, resourceId, 0);
                         break;
                     case MvxAndroidPropertyBinding.TextView_CompoundDrawableNameTop:
+                    case MvxAndroidPropertyBinding.TextView_CompoundDrawableIdTop:
                         textView.SetCompoundDrawablesWithIntrinsicBounds(0, resourceId, 0, 0);
                         break;
                     case MvxAndroidPropertyBinding.TextView_CompoundDrawableNameBottom:
+                    case MvxAndroidPropertyBinding.TextView_CompoundDrawableIdBottom:
                         textView.SetCompoundDrawablesWithIntrinsicBounds(0, 0, 0, resourceId);
                         break;
                     case MvxAndroidPropertyBinding.TextView_CompoundDrawableNameStart:
+                    case MvxAndroidPropertyBinding.TextView_CompoundDrawableIdStart:
                         textView.SetCompoundDrawablesRelativeWithIntrinsicBounds(resourceId, 0, 0, 0);
                         break;
                     case MvxAndroidPropertyBinding.TextView_CompoundDrawableNameEnd:
+                    case MvxAndroidPropertyBinding.TextView_CompoundDrawableIdEnd:
                         textView.SetCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, resourceId, 0);
                         break;
                 }

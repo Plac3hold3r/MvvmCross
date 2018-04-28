@@ -3,15 +3,15 @@
 // See the LICENSE file in the project root for more information.
 
 using System;
-using Android.Views;
+using Android.Widget;
 using MvvmCross.Binding;
 
 namespace MvvmCross.Platforms.Android.Binding.Target
 {
     public class MvxTextViewCompoundDrawablesDrawableNameTargetBinding
-        : MvxTextViewCompoundDrawablesBaseTargetBinding
+        : MvxTextViewCompoundDrawablesDrawableTargetBinding
     {
-        public MvxTextViewCompoundDrawablesDrawableNameTargetBinding(View target, string whichCompoundDrawable)
+        public MvxTextViewCompoundDrawablesDrawableNameTargetBinding(TextView target, string whichCompoundDrawable)
             : base(target, whichCompoundDrawable)
         {
         }
