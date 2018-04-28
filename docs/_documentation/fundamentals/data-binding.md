@@ -1099,6 +1099,18 @@ Android.Views.View | MarginStart | BindMarginStart() | 6.0.0
 Android.Views.View | MarginEnd | BindMarginEnd() | 6.0.0
 Android.Widget.TextView | Text | BindText()
 Android.Widget.TextView | TextFormatted | BindTextFormatted()
+Android.Widget.TextView | CompoundDrawableNameLeft | BindCompoundDrawableNameLeft() | 6.1.0
+Android.Widget.TextView | CompoundDrawableNameRight | BindCompoundDrawableNameRight() | 6.1.0
+Android.Widget.TextView | CompoundDrawableNameTop | BindCompoundDrawableNameTop() | 6.1.0
+Android.Widget.TextView | CompoundDrawableNameBottom | BindCompoundDrawableNameBottom() | 6.1.0
+Android.Widget.TextView | CompoundDrawableNameStart | BindCompoundDrawableNameStart() | 6.1.0
+Android.Widget.TextView | CompoundDrawableNameEnd | BindCompoundDrawableNameEnd() | 6.1.0
+Android.Widget.TextView | CompoundDrawableIdLeft | BindCompoundDrawableIdLeft() | 6.1.0
+Android.Widget.TextView | CompoundDrawableIdRight | BindCompoundDrawableIdRight() | 6.1.0
+Android.Widget.TextView | CompoundDrawableIdTop | BindCompoundDrawableIdTop() | 6.1.0
+Android.Widget.TextView | CompoundDrawableIdBottom | BindCompoundDrawableIdBottom() | 6.1.0
+Android.Widget.TextView | CompoundDrawableIdStart | BindCompoundDrawableIdStart() | 6.1.0
+Android.Widget.TextView | CompoundDrawableIdEnd | BindCompoundDrawableIdEnd() | 6.1.0
 Android.Widget.CompoundButton | Checked | BindChecked()
 Android.Widget.SeekBar | Progress | BindProgress()
 Android.Widget.ImageView | Bitmap | BindBitmap()

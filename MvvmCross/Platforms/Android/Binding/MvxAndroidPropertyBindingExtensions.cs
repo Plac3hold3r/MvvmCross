@@ -119,7 +119,7 @@ namespace MvvmCross.Platforms.Android.Binding
         public static string BindCompoundDrawableNameLeft(this TextView view)
             => MvxAndroidPropertyBinding.TextView_CompoundDrawableNameLeft;
 
-        public static string BindompoundDrawableNameRight(this TextView view)
+        public static string BindCompoundDrawableNameRight(this TextView view)
             => MvxAndroidPropertyBinding.TextView_CompoundDrawableNameRight;
 
         public static string BindCompoundDrawableNameTop(this TextView view)
